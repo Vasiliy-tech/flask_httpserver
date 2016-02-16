@@ -13,7 +13,7 @@ app = Flask(__name__)
 def create_response(result):
     res = {}
     res['result'] = result
-    res['time'] = strftime("%Y-%m-%d %H:%M ")
+    res['time'] = strftime("%Y-%m-%d %H:%M")
     response = json.dumps(res, encoding='utf-8')
     return response
 
